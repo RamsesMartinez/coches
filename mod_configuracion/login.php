@@ -53,8 +53,8 @@ if ($_POST["usuario"]){
 	}
 }
 ?>		
-<!-- Descomentar si el codigo de la linea 18 está descomentado -->
+<!-- Descomentar si el codigo de la linea 18 está comentado -->
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 	window.location = "../index.php";
-</script>	 -->
+</script>	
