@@ -26,7 +26,7 @@ if ($_POST["usuario"]){
 
 	// }
 
-	if (mysql_num_rows($result) == 10){
+	if (mysql_num_rows($result) == 1){
 		if($_SESSION["tipo"]=="usuario"){
 			$_SESSION["usuario"]=mysql_result($result,0,"usuario");
 			$_SESSION["password"]=mysql_result($result,0,"password");
@@ -46,8 +46,8 @@ if ($_POST["usuario"]){
 		<script type="text/javascript">
 			// Descomentar si el codigo de la linea 18 está comentado
 
-			// alert("\tUsuario o Password incorrecto \n \t Favor de verificar los datos");
-			// window.location = "../index.php";
+			alert("\tUsuario o Password incorrecto \n \t Favor de verificar los datos");
+			window.location = "../index.php";
 		</script>
 		<?php 
 	}
